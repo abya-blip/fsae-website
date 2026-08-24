@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IIPE Racing — SAE Supra 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress"></div>
+
+<header>
+  <div class="nav">
+    <div class="brand"><span class="brand-mark">IR</span> IIPE RACING</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#announcements">Announcements<span class="nav-alert" id="navAnnounceAlert" style="display:none;"></span></a>
+      <a href="#team">Team</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#join">Join Us</a>
+      <a href="#blog">Blog</a>
+    </nav>
+    <a href="#join" class="nav-cta" id="navJoinBtn">Join The Team</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero wrap" id="home">
+  <div class="lights-rig" id="lightsRig">
+    <div class="light" data-i="0"></div>
+    <div class="light" data-i="1"></div>
+    <div class="light" data-i="2"></div>
+    <div class="light" data-i="3"></div>
+    <div class="light" data-i="4"></div>
+  </div>
+  <div class="eyebrow">First-year Formula Student team</div>
+  <h1 class="hero-headline">Building our first race car. Targeting <span class="accent">SAE Supra 2027.</span></h1>
+  <p class="hero-sub">IIPE Racing is a brand-new student engineering team designing, fabricating, and testing a Formula-style race car from the ground up. No legacy to inherit, no old car to fix — just a blank build sheet, a competition date on the calendar, and a crew determined to fill the gap between the two.</p>
+  <div class="hero-actions">
+    <a href="#join" class="btn-primary" id="heroJoinBtn">Join The Founding Team</a>
+    <a href="#blog" class="btn-ghost">Read The Build Log</a>
+  </div>
+</section>
+
+<div class="ticker reveal">
+  <div class="ticker-inner">
+    <div class="tick"><div class="tick-num" id="tickDays">—</div><div class="tick-label">Days to Supra 2027</div></div>
+    <div class="tick"><div class="tick-num" id="tickMembers">—</div><div class="tick-label">Team members</div></div>
+    <div class="tick"><div class="tick-num">6</div><div class="tick-label">Sub-teams active</div></div>
+    <div class="tick"><div class="tick-num">3</div><div class="tick-label">Weeks since kickoff</div></div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>SAE SUPRA 2027 <b>✦</b> ZERO TO GRID <b>✦</b> RECRUITING NOW <b>✦</b> FIRST-YEAR TEAM <b>✦</b> BUILDING FROM SCRATCH <b>✦</b></span>
+    <span>SAE SUPRA 2027 <b>✦</b> ZERO TO GRID <b>✦</b> RECRUITING NOW <b>✦</b> FIRST-YEAR TEAM <b>✦</b> BUILDING FROM SCRATCH <b>✦</b></span>
+  </div>
+</div>
+
+<!-- ANNOUNCEMENTS -->
+<section id="announcements">
+  <div class="wrap">
+    <div class="join-header reveal">
+      <div>
+        <div class="eyebrow">Latest updates</div>
+        <h2 class="section-title" style="margin-bottom:0;">Announcements</h2>
+      </div>
+      <button class="btn-primary btn-small" id="newAnnouncementBtn">Post Announcement</button>
+    </div>
+    <p class="lede reveal" style="margin-top:14px;">Time-sensitive updates from the team — meeting changes, deadlines, and anything that can't wait for the next blog post. Posting requires a team sign-in.</p>
+
+    <div class="announce-list reveal" id="announceList">
+      <div class="empty-state"><span class="loader-dots"><span></span><span></span><span></span></span>Loading announcements…</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow reveal">Who we are</div>
+    <h2 class="section-title reveal">Zero to grid, one build season at a time</h2>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="lede">We're a first-year student team competing in SAE Supra, India's Formula Student-style competition — designing and building an open-wheel single-seater from scratch, then racing it against teams from across the country in 2027.</p>
+        <p class="lede" style="margin-top:16px;">No car exists yet — which means every system, every layout decision, every line on the drawing board is still wide open. Whoever joins in the next few months isn't inheriting someone else's design. They're making it.</p>
+      </div>
+      <div class="subteams reveal">
+        <div class="subteam-card"><h4>Chassis &amp; Body</h4><p>Frame design, ergonomics, aero surfaces.</p></div>
+        <div class="subteam-card"><h4>Powertrain</h4><p>Engine integration, drivetrain, cooling.</p></div>
+        <div class="subteam-card"><h4>Suspension &amp; Steering</h4><p>Dynamics, geometry, tuning.</p></div>
+        <div class="subteam-card"><h4>Electronics</h4><p>Data acquisition, wiring, controls.</p></div>
+        <div class="subteam-card"><h4>Manufacturing</h4><p>Fabrication, machining, composites.</p></div>
+        <div class="subteam-card"><h4>Business &amp; Ops</h4><p>Budgeting, logistics, outreach.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="wrap">
+    <div class="join-header reveal">
+      <div>
+        <div class="eyebrow">Who's building this</div>
+        <h2 class="section-title" style="margin-bottom:0;">The Team</h2>
+      </div>
+      <button class="btn-primary btn-small" id="addTeamBtn">Add Yourself</button>
+    </div>
+    <p class="lede reveal" style="margin-top:14px;">The people turning a blank build sheet into a race car — starting with the four of us who said yes before there was anything to join yet.</p>
+    <div class="team-grid reveal" id="teamGrid">
+      <div class="empty-state"><span class="loader-dots"><span></span><span></span><span></span></span>Loading team…</div>
+    </div>
+  </div>
+</section>
+
+<div class="stripe-divider"></div>
+
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="wrap">
+    <div class="eyebrow reveal">The build, in order</div>
+    <h2 class="section-title reveal">Roadmap to Supra 2027</h2>
+    <p class="lede reveal">Every stage between "team just formed" and "car on the grid." We'll mark each one off as we hit it — this list doubles as our progress log.</p>
+    <ul class="roadmap reveal">
+      <li class="rstep done" data-n="1"><h4>Team formation &amp; registration</h4><p>Core team assembled, faculty advisor onboard, college registration complete.</p><span class="rtag">Complete</span></li>
+      <li class="rstep" data-n="2"><h4>Recruitment &amp; sub-team formation</h4><p>Filling out chassis, powertrain, suspension, electronics, manufacturing, and business sub-teams.</p><span class="rtag">In progress</span></li>
+      <li class="rstep" data-n="3"><h4>Concept design &amp; rules study</h4><p>SAE Supra rulebook review, concept sketches, initial design targets.</p><span class="rtag">Upcoming</span></li>
+      <li class="rstep" data-n="4"><h4>Detailed design &amp; CAD</h4><p>Full vehicle CAD, simulation, design reviews with faculty and mentors.</p><span class="rtag">Upcoming</span></li>
+      <li class="rstep" data-n="5"><h4>Fabrication &amp; build</h4><p>Chassis fabrication, sourcing, sub-assembly integration.</p><span class="rtag">Upcoming</span></li>
+      <li class="rstep" data-n="6"><h4>Testing &amp; validation</h4><p>Shakedown runs, tuning, reliability testing ahead of competition.</p><span class="rtag">Upcoming</span></li>
+      <li class="rstep" data-n="7"><h4>SAE Supra 2027</h4><p>Competition week — design judging, static events, dynamic events.</p><span class="rtag">Target</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section id="join">
+  <div class="wrap">
+    <div class="join-header reveal">
+      <div>
+        <div class="eyebrow">Recruitment is open</div>
+        <h2 class="section-title" style="margin-bottom:0;">Join the founding team</h2>
+      </div>
+      <button class="btn-primary btn-small" id="applyNowBtn">Apply Now</button>
+    </div>
+    <p class="lede reveal" style="margin-top:14px;">No prior race-car experience needed — nobody on this team has built one before either. Every sub-team below is actively recruiting first-years through final-years, and you'll learn the discipline by doing it, on a car that's actually going to race. Pick the vertical that pulls you in and throw your name in below.</p>
+    <div class="join-grid reveal">
+      <div class="join-card"><span class="join-tag">Recruiting</span><h4>Chassis &amp; Body</h4><p>Structural design, ergonomics, and aero surfacing for the frame.</p><button class="join-apply" data-vertical="Chassis & Body">Apply →</button></div>
+      <div class="join-card"><span class="join-tag">Recruiting</span><h4>Powertrain</h4><p>Engine, drivetrain, cooling, and fuel systems integration.</p><button class="join-apply" data-vertical="Powertrain">Apply →</button></div>
+      <div class="join-card"><span class="join-tag">Recruiting</span><h4>Suspension &amp; Steering</h4><p>Geometry, dampers, and handling dynamics.</p><button class="join-apply" data-vertical="Suspension & Steering">Apply →</button></div>
+      <div class="join-card"><span class="join-tag">Recruiting</span><h4>Electronics &amp; Data</h4><p>Wiring harness, sensors, telemetry, and controls.</p><button class="join-apply" data-vertical="Electronics & Data">Apply →</button></div>
+      <div class="join-card"><span class="join-tag">Recruiting</span><h4>Manufacturing</h4><p>Fabrication, machining, welding, composites layup.</p><button class="join-apply" data-vertical="Manufacturing">Apply →</button></div>
+      <div class="join-card"><span class="join-tag">Recruiting</span><h4>Business &amp; Ops</h4><p>Budgeting, event logistics, outreach, media.</p><button class="join-apply" data-vertical="Business & Ops">Apply →</button></div>
+    </div>
+  </div>
+</section>
+
+<div class="stripe-divider"></div>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="wrap">
+    <div class="blog-header reveal">
+      <div>
+        <div class="eyebrow">Build log</div>
+        <h2 class="section-title" style="margin-bottom:0;">The Blog</h2>
+      </div>
+      <div class="blog-actions">
+        <span class="auth-status" id="authStatus"></span>
+        <button class="btn-primary btn-small" id="newPostBtn">New Post</button>
+      </div>
+    </div>
+    <p class="lede reveal" style="margin-top:14px;">Weekly notes from the garage — design calls, meeting recaps, wins, and whatever breaks along the way. Follow the car from blank sketch to grid-ready.</p>
+    <div class="blog-list reveal" id="blogList">
+      <div class="empty-state"><span class="loader-dots"><span></span><span></span><span></span></span>Loading posts…</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;"><span class="brand-mark">IR</span> IIPE RACING</div>
+        <p class="lede" style="font-size:13px;">IIPE Racing · Formula Student team · SAE Supra 2027</p>
+      </div>
+      <div class="foot-links">
+        <a href="#about">About</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#team">Team</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#join">Join Us</a>
+        <a href="#blog">Blog</a>
+        <a href="mailto:team@iiperacing.example">Contact</a>
+      </div>
+    </div>
+    <p class="fine">Zero to grid. See you at Supra 2027.</p>
+  </div>
+</footer>
+
+<!-- NEW POST MODAL -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <h3 id="modalTitle">Team Sign In</h3>
+
+    <!-- Step 1: sign in (only shown if not already authenticated) -->
+    <div id="signInStep">
+      <div class="field">
+        <label for="emailInput">Team email</label>
+        <input type="email" id="emailInput" placeholder="you@iiperacing.example" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="passInput">Password</label>
+        <input type="password" id="passInput" placeholder="Password" autocomplete="current-password">
+      </div>
+      <div class="form-msg err" id="signInMsg"></div>
+      <div class="modal-actions">
+        <button class="btn-ghost btn-small" id="cancelSignIn">Cancel</button>
+        <button class="btn-primary btn-small" id="doSignIn">Sign In</button>
+      </div>
+      <p class="modal-switch">Don't have an account yet? Ask a team lead to set one up for you.</p>
+    </div>
+
+    <!-- Step 2: write the post -->
+    <div id="postStep" style="display:none;">
+      <div class="field"><label for="pTitle">Title</label><input type="text" id="pTitle" placeholder="Week 3: chassis material finalized"></div>
+      <div class="field"><label for="pAuthor">Author</label><input type="text" id="pAuthor" placeholder="Your name"></div>
+      <div class="field"><label for="pTag">Tag</label><input type="text" id="pTag" placeholder="Design / Meeting / Fabrication"></div>
+      <div class="field"><label for="pBody">Post</label><textarea id="pBody" placeholder="What happened this week..."></textarea></div>
+      <div class="field">
+        <label for="pImage">Photo (optional)</label>
+        <input type="file" id="pImage" accept="image/*">
+        <div class="photo-preview" id="pImagePreview" style="display:none;">
+          <img id="pImagePreviewImg" alt="">
+          <button type="button" id="pImageRemove">Remove</button>
+        </div>
+      </div>
+      <div class="form-msg" id="postMsg"></div>
+      <div class="modal-actions">
+        <button class="btn-ghost btn-small" id="cancelPost">Cancel</button>
+        <button class="btn-primary btn-small" id="publishPost">Publish</button>
+      </div>
+    </div>
+
+    <!-- Step 2b: add yourself / a teammate to the roster -->
+    <div id="teamStep" style="display:none;">
+      <div class="field"><label for="mName">Name</label><input type="text" id="mName" placeholder="Full name"></div>
+      <div class="field"><label for="mRoll">Roll number</label><input type="text" id="mRoll" placeholder="e.g. 24ME1042"></div>
+      <div class="field">
+        <label for="mRole">Role</label>
+        <select id="mRole">
+          <option value="Founder">Founder</option>
+          <option value="Member" selected>Member</option>
+        </select>
+      </div>
+      <div class="field" id="mVerticalSingleWrap">
+        <label for="mVertical">Vertical</label>
+        <select id="mVertical">
+          <option value="">Select a vertical…</option>
+          <option value="Chassis & Body">Chassis & Body</option>
+          <option value="Powertrain">Powertrain</option>
+          <option value="Suspension & Steering">Suspension & Steering</option>
+          <option value="Electronics & Data">Electronics & Data</option>
+          <option value="Manufacturing">Manufacturing</option>
+          <option value="Business & Ops">Business & Ops</option>
+        </select>
+      </div>
+      <div class="field" id="mVerticalMultiWrap" style="display:none;">
+        <label>Verticals <span style="text-transform:none; letter-spacing:0; font-weight:400;">(founders can pick more than one)</span></label>
+        <div class="checkbox-group" id="mVerticalMulti">
+          <label class="checkbox-pill"><input type="checkbox" value="Chassis & Body">Chassis & Body</label>
+          <label class="checkbox-pill"><input type="checkbox" value="Powertrain">Powertrain</label>
+          <label class="checkbox-pill"><input type="checkbox" value="Suspension & Steering">Suspension & Steering</label>
+          <label class="checkbox-pill"><input type="checkbox" value="Electronics & Data">Electronics & Data</label>
+          <label class="checkbox-pill"><input type="checkbox" value="Manufacturing">Manufacturing</label>
+          <label class="checkbox-pill"><input type="checkbox" value="Business & Ops">Business & Ops</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="mPhoto">Photo (optional)</label>
+        <input type="file" id="mPhoto" accept="image/*">
+        <div class="photo-preview" id="mPhotoPreview" style="display:none;">
+          <img id="mPhotoPreviewImg" alt="">
+          <button type="button" id="mPhotoRemove">Remove</button>
+        </div>
+      </div>
+      <div class="form-msg" id="teamMsg"></div>
+      <div class="modal-actions">
+        <button class="btn-ghost btn-small" id="cancelTeam">Cancel</button>
+        <button class="btn-primary btn-small" id="submitTeam">Add To Roster</button>
+      </div>
+    </div>
+
+    <!-- Step 2c: post an announcement -->
+    <div id="announceStep" style="display:none;">
+      <div class="field"><label for="anTitle">Title</label><input type="text" id="anTitle" placeholder="Meeting moved to Thursday 6pm"></div>
+      <div class="field">
+        <label for="anPriority">Priority</label>
+        <select id="anPriority">
+          <option value="normal" selected>Normal</option>
+          <option value="urgent">Urgent</option>
+        </select>
+      </div>
+      <div class="field"><label for="anBody">Message</label><textarea id="anBody" placeholder="Details for the team..."></textarea></div>
+      <div class="form-msg" id="announceMsg"></div>
+      <div class="modal-actions">
+        <button class="btn-ghost btn-small" id="cancelAnnounce">Cancel</button>
+        <button class="btn-primary btn-small" id="publishAnnounce">Post Announcement</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JOIN APPLICATION MODAL -->
+<div class="modal-backdrop" id="applyModalBackdrop">
+  <div class="modal">
+    <h3>Apply To Join</h3>
+    <p class="modal-switch" style="margin-top:-8px; margin-bottom:16px;">Two minutes to fill out. Every single application gets read by a founder — not a filter.</p>
+
+    <div class="field"><label for="aName">Full name</label><input type="text" id="aName" placeholder="Your full name"></div>
+    <div class="field"><label for="aEmail">Email</label><input type="email" id="aEmail" placeholder="you@example.com" autocomplete="email"></div>
+    <div class="field"><label for="aBranch">Branch</label><input type="text" id="aBranch" placeholder="e.g. Mechanical Engineering"></div>
+    <div class="field"><label for="aRoll">Roll number</label><input type="text" id="aRoll" placeholder="e.g. 24ME1042"></div>
+    <div class="field">
+      <label for="aVertical">Desired vertical</label>
+      <select id="aVertical">
+        <option value="">Select a vertical…</option>
+        <option value="Chassis & Body">Chassis & Body</option>
+        <option value="Powertrain">Powertrain</option>
+        <option value="Suspension & Steering">Suspension & Steering</option>
+        <option value="Electronics & Data">Electronics & Data</option>
+        <option value="Manufacturing">Manufacturing</option>
+        <option value="Business & Ops">Business & Ops</option>
+        <option value="Not sure yet">Not sure yet</option>
+      </select>
+    </div>
+    <div class="field"><label for="aWhy">Why do you want to join? (optional)</label><textarea id="aWhy" placeholder="A sentence or two is fine"></textarea></div>
+    <div class="form-msg" id="applyMsg"></div>
+    <div class="modal-actions">
+      <button class="btn-ghost btn-small" id="cancelApply">Cancel</button>
+      <button class="btn-primary btn-small" id="submitApply">Submit Application</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

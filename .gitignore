@@ -1,0 +1,12 @@
+# dependencies (unused by the site itself — it loads Firebase/Motion via CDN,
+# but kept installed locally in case that changes later)
+node_modules/
+
+# Vercel
+.vercel/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.log
+_to_delete/

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applications — IIPE Racing</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress"></div>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand"><span class="brand-mark">IR</span> IIPE RACING</a>
+    <span class="admin-page-label">Applications</span>
+  </div>
+</header>
+
+<main class="admin-wrap">
+
+  <!-- SIGN-IN GATE -->
+  <section id="gate" class="admin-gate">
+    <div class="admin-gate-card" id="gateCard">
+      <h1>Team Sign In</h1>
+      <p class="lede" style="margin-bottom:20px; font-size:14px;">Applications are only visible to signed-in team accounts — same login as the blog and roster.</p>
+      <div class="field"><label for="gEmail">Team email</label><input type="email" id="gEmail" placeholder="you@iiperacing.example" autocomplete="username"></div>
+      <div class="field"><label for="gPass">Password</label><input type="password" id="gPass" placeholder="Password" autocomplete="current-password"></div>
+      <div class="form-msg err" id="gateMsg"></div>
+      <button class="btn-primary" id="gateSignIn" style="width:100%; margin-top:6px;">Sign In</button>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard" style="display:none;">
+    <div class="admin-header reveal in">
+      <div>
+        <div class="eyebrow">Recruitment</div>
+        <h1 class="section-title" style="margin-bottom:0;">Applications</h1>
+      </div>
+      <span class="auth-status" id="adminAuthStatus"></span>
+    </div>
+
+    <div class="admin-toolbar">
+      <input type="text" id="searchInput" placeholder="Search name or email…">
+      <select id="filterVertical">
+        <option value="">All verticals</option>
+        <option value="Chassis & Body">Chassis & Body</option>
+        <option value="Powertrain">Powertrain</option>
+        <option value="Suspension & Steering">Suspension & Steering</option>
+        <option value="Electronics & Data">Electronics & Data</option>
+        <option value="Manufacturing">Manufacturing</option>
+        <option value="Business & Ops">Business & Ops</option>
+        <option value="Not sure yet">Not sure yet</option>
+      </select>
+      <span class="admin-count" id="appCount"></span>
+    </div>
+
+    <div class="admin-list" id="appList">
+      <div class="empty-state"><span class="loader-dots"><span></span><span></span><span></span></span>Loading applications…</div>
+    </div>
+  </section>
+
+</main>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>
